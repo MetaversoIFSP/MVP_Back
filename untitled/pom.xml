@@ -40,14 +40,13 @@
       <groupId>io.springfox</groupId>  
       <artifactId>springfox-swagger-ui</artifactId>  
       <version>2.9.2</version> 
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
-    <dependency>
-      <groupId>com.microsoft.sqlserver</groupId>
-      <artifactId>mssql-jdbc</artifactId>
-      <version>10.2.1.jre11</version>
-    </dependency>
-
+    </dependency>  
+    <!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->  
+    <dependency> 
+      <groupId>com.microsoft.sqlserver</groupId>  
+      <artifactId>mssql-jdbc</artifactId>  
+      <version>10.2.1.jre11</version> 
+    </dependency>  
     <dependency> 
       <groupId>org.springframework.boot</groupId>  
       <artifactId>spring-boot-starter-test</artifactId>  
@@ -67,20 +66,20 @@
       <groupId>org.projectlombok</groupId>  
       <artifactId>lombok</artifactId>  
       <optional>true</optional> 
-    </dependency>
-      <dependency>
-          <groupId>junit</groupId>
-          <artifactId>junit</artifactId>
-          <scope>test</scope>
-      </dependency>
+    </dependency>  
+    <dependency> 
+      <groupId>junit</groupId>  
+      <artifactId>junit</artifactId>  
+      <scope>test</scope> 
+    </dependency> 
   </dependencies>  
   <build> 
-    <plugins>
-      <plugin>
-        <groupId>com.microsoft.azure</groupId>
-        <artifactId>azure-spring-apps-maven-plugin</artifactId>
-        <version>1.10.0</version>
-      </plugin>
+    <plugins> 
+      <plugin> 
+        <groupId>com.microsoft.azure</groupId>  
+        <artifactId>azure-spring-apps-maven-plugin</artifactId>  
+        <version>1.10.0</version> 
+      </plugin>  
       <plugin> 
         <groupId>org.springframework.boot</groupId>  
         <artifactId>spring-boot-maven-plugin</artifactId>  
@@ -92,16 +91,16 @@
             </exclude> 
           </excludes> 
         </configuration> 
-      </plugin>
+      </plugin>  
       <plugin> 
         <groupId>com.microsoft.azure</groupId>  
         <artifactId>azure-webapp-maven-plugin</artifactId>  
         <version>2.5.0</version>  
         <configuration> 
           <schemaVersion>v2</schemaVersion>  
-          <subscriptionId>f4904a3f-497a-4f05-9f6d-d300324cf62a</subscriptionId>  
+          <subscriptionId>7e121073-290a-46ee-9607-04825f7111fb</subscriptionId>  
           <resourceGroup>MVP</resourceGroup>  
-          <appName>metaverso-mvp-back</appName>  
+          <appName>metaversomvp-back</appName>  
           <pricingTier>P1v2</pricingTier>  
           <region>centralus</region>  
           <runtime> 
@@ -120,7 +119,7 @@
             </resources> 
           </deployment> 
         </configuration> 
-      </plugin>
+      </plugin> 
     </plugins> 
   </build> 
 </project>
