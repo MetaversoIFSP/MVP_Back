@@ -14,24 +14,19 @@ public class CategoriaNivelUm {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID", nullable = false)
-    @Getter @Setter
     private Long id;
 
     @Column(name = "NOME")
-    @Getter @Setter
     private String name;
 
     @Column(name = "URL_IMAGEM")
-    @Getter @Setter
     private String urlImage;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "categoriaNivelUm")
-    @Getter @Setter
     @ToString.Exclude
     private List<CategoriaNivelDois> categoriaNivelDoisList;
 
     @Column(name = "PONTOS_RELEVANCIA")
-    @Getter @Setter
     private Integer relevancePoints;
 
     @Override

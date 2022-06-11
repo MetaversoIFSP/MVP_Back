@@ -90,7 +90,7 @@ public class FaqController {
             faqService.addRelevancePointToCategoriaDois(idCategoriaDois);
             return solutions
                     .map(ResponseEntity::ok)
-                    .orElseGet(()->ResponseEntity.noContent().build());
+                    .orElseGet(() -> ResponseEntity.noContent().build());
         } else return notFound("Nenhuma Solution encontrada");
     }
 

@@ -8,6 +8,7 @@ import javax.persistence.*;
 @Builder @AllArgsConstructor
 @Entity
 @Table(name = "FaqSolution")
+@Getter @Setter
 public class Solution {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,16 +17,15 @@ public class Solution {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "ID_CategoriaDois")
+    @JoinColumn(name = "ID_Categoria_Dois")
     @ToString.Exclude
-    @Getter @Setter
     private CategoriaNivelDois categoriaNivelDois;
 
-    @Getter @Setter
     private String pergunta;
-    @Getter @Setter
+
     private String resposta;
-    @Getter @Setter
+
+    @Column(name = "PONTOS_RELEVANCIA")
     private Integer relevancePoints;
 
 }
