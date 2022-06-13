@@ -2,16 +2,14 @@ package studentsystem.controller.cadastro;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import studentsystem.model.cadastro.Tecnico;
 import studentsystem.model.cadastro.TecnicoDto;
 import studentsystem.service.interfaces.ITecnicoService;
 
 @RestController
 @RequestMapping("tecnico")
+@CrossOrigin
 public class TecnicoController {
     @Autowired
     private ITecnicoService tecnicoService;

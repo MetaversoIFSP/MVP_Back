@@ -13,6 +13,7 @@ import studentsystem.service.interfaces.IFisicaClienteService;
 
 @RestController
 @RequestMapping("cliente")
+@CrossOrigin
 public class ClienteController {
     @Autowired
     private IFisicaClienteService clienteService;

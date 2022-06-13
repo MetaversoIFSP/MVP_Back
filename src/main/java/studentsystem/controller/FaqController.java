@@ -18,6 +18,7 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("faq")
 @Slf4j
+@CrossOrigin
 public class FaqController {
 
     @Autowired
